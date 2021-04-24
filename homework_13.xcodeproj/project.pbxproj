@@ -18,6 +18,7 @@
 		BC6CF65E262B084C003FC457 /* suffix_extractor.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BC6CF65A262B084B003FC457 /* suffix_extractor.intentdefinition */; };
 		BC6CF65F262B084C003FC457 /* suffix_extractor.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BC6CF65A262B084B003FC457 /* suffix_extractor.intentdefinition */; };
 		BC6CF662262B084C003FC457 /* suffix_extractorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BC6CF651262B084B003FC457 /* suffix_extractorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCB609B526344F2700BDC918 /* Suffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB609B426344F2700BDC918 /* Suffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		BC6CF65A262B084B003FC457 /* suffix_extractor.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = suffix_extractor.intentdefinition; sourceTree = "<group>"; };
 		BC6CF65B262B084C003FC457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC6CF65D262B084C003FC457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCB609B426344F2700BDC918 /* Suffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suffer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				BC6CF63D262B0691003FC457 /* homework_13App.swift */,
 				BC6CF63F262B0692003FC457 /* MainScreen.swift */,
+				BCB609B426344F2700BDC918 /* Suffer.swift */,
 				BC6CF641262B0692003FC457 /* Assets.xcassets */,
 				BC6CF646262B0692003FC457 /* Info.plist */,
 				BC6CF643262B0692003FC457 /* Preview Content */,
@@ -241,6 +244,7 @@
 			files = (
 				BC6CF640262B0692003FC457 /* MainScreen.swift in Sources */,
 				BC6CF63E262B0691003FC457 /* homework_13App.swift in Sources */,
+				BCB609B526344F2700BDC918 /* Suffer.swift in Sources */,
 				BC6CF65F262B084C003FC457 /* suffix_extractor.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
