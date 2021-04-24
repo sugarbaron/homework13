@@ -9,13 +9,17 @@
 final class Suffer {
     
     static func extract(from source: String) -> [String] {
-        print("woo hoo")
+        let words: [String] = source.split(separator: " ").map { String($0) }
+        var suffixes: [String] = [ ]
+        words.forEach { suffixes.append(contentsOf: extractFrom(word: $0)) }
+        return suffixes
+    }
+    
+    private static func extractFrom(word: String) -> [String] {
         let suffixSize: Int = 3
         var suffixes: [String] = [ ]
-        print("source size:\(source.count) start:\(source.count - suffixSize))")
-        for i in stride(from: (source.count - suffixSize), through: 0, by: -1)  {
-            print("i want from:\(i) to \(i+suffixSize)")
-            suffixes.append( source.substring(i ..< i+suffixSize) )
+        for i in stride(from: (word.count - suffixSize), through: 0, by: -1)  {
+            suffixes.append( word.substring(i ..< i+suffixSize) )
         }
         return suffixes
     }
