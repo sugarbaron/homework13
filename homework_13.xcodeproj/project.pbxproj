@@ -19,6 +19,13 @@
 		BC6CF65F262B084C003FC457 /* suffix_extractor.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BC6CF65A262B084B003FC457 /* suffix_extractor.intentdefinition */; };
 		BC6CF662262B084C003FC457 /* suffix_extractorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BC6CF651262B084B003FC457 /* suffix_extractorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCB609B526344F2700BDC918 /* Suffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB609B426344F2700BDC918 /* Suffer.swift */; };
+		BCB7CA3926353E4800492C11 /* SourceTextTerminalUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA3826353E4800492C11 /* SourceTextTerminalUi.swift */; };
+		BCB7CA4326353F7700492C11 /* SourceTextTerminalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA4226353F7700492C11 /* SourceTextTerminalViewModel.swift */; };
+		BCB7CA4C2635411B00492C11 /* SourceTextTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA4B2635411B00492C11 /* SourceTextTerminal.swift */; };
+		BCB7CA54263547D200492C11 /* SuffixesViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA53263547D200492C11 /* SuffixesViewer.swift */; };
+		BCB7CA582635480E00492C11 /* SuffixesViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA572635480E00492C11 /* SuffixesViewerViewModel.swift */; };
+		BCB7CA5C263549B300492C11 /* SuffixesViewerUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA5B263549B300492C11 /* SuffixesViewerUi.swift */; };
+		BCB7CA6026354CC300492C11 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA5F26354CC300492C11 /* Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,13 @@
 		BC6CF65B262B084C003FC457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC6CF65D262B084C003FC457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB609B426344F2700BDC918 /* Suffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suffer.swift; sourceTree = "<group>"; };
+		BCB7CA3826353E4800492C11 /* SourceTextTerminalUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTextTerminalUi.swift; sourceTree = "<group>"; };
+		BCB7CA4226353F7700492C11 /* SourceTextTerminalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTextTerminalViewModel.swift; sourceTree = "<group>"; };
+		BCB7CA4B2635411B00492C11 /* SourceTextTerminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTextTerminal.swift; sourceTree = "<group>"; };
+		BCB7CA53263547D200492C11 /* SuffixesViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesViewer.swift; sourceTree = "<group>"; };
+		BCB7CA572635480E00492C11 /* SuffixesViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesViewerViewModel.swift; sourceTree = "<group>"; };
+		BCB7CA5B263549B300492C11 /* SuffixesViewerUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesViewerUi.swift; sourceTree = "<group>"; };
+		BCB7CA5F26354CC300492C11 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				BC6CF63D262B0691003FC457 /* homework_13App.swift */,
-				BC6CF63F262B0692003FC457 /* MainScreen.swift */,
-				BCB609B426344F2700BDC918 /* Suffer.swift */,
+				BCB7CA3C26353E5200492C11 /* MainScreen */,
 				BC6CF641262B0692003FC457 /* Assets.xcassets */,
 				BC6CF646262B0692003FC457 /* Info.plist */,
 				BC6CF643262B0692003FC457 /* Preview Content */,
@@ -140,6 +153,54 @@
 				BC6CF65D262B084C003FC457 /* Info.plist */,
 			);
 			path = suffix_extractor;
+			sourceTree = "<group>";
+		};
+		BCB7CA3C26353E5200492C11 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BC6CF63F262B0692003FC457 /* MainScreen.swift */,
+				BCB7CA4A2635410700492C11 /* UiComponents */,
+				BCB7CA3D26353E5C00492C11 /* Views */,
+				BCB7CA3E26353E6B00492C11 /* ViewModels */,
+				BCB7CA3F26353E7B00492C11 /* Toolkit */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		BCB7CA3D26353E5C00492C11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCB7CA3826353E4800492C11 /* SourceTextTerminalUi.swift */,
+				BCB7CA5B263549B300492C11 /* SuffixesViewerUi.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCB7CA3E26353E6B00492C11 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BCB7CA4226353F7700492C11 /* SourceTextTerminalViewModel.swift */,
+				BCB7CA572635480E00492C11 /* SuffixesViewerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BCB7CA3F26353E7B00492C11 /* Toolkit */ = {
+			isa = PBXGroup;
+			children = (
+				BCB609B426344F2700BDC918 /* Suffer.swift */,
+				BCB7CA5F26354CC300492C11 /* Keyboard.swift */,
+			);
+			path = Toolkit;
+			sourceTree = "<group>";
+		};
+		BCB7CA4A2635410700492C11 /* UiComponents */ = {
+			isa = PBXGroup;
+			children = (
+				BCB7CA4B2635411B00492C11 /* SourceTextTerminal.swift */,
+				BCB7CA53263547D200492C11 /* SuffixesViewer.swift */,
+			);
+			path = UiComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,10 +303,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB7CA4326353F7700492C11 /* SourceTextTerminalViewModel.swift in Sources */,
 				BC6CF640262B0692003FC457 /* MainScreen.swift in Sources */,
+				BCB7CA4C2635411B00492C11 /* SourceTextTerminal.swift in Sources */,
+				BCB7CA6026354CC300492C11 /* Keyboard.swift in Sources */,
 				BC6CF63E262B0691003FC457 /* homework_13App.swift in Sources */,
 				BCB609B526344F2700BDC918 /* Suffer.swift in Sources */,
 				BC6CF65F262B084C003FC457 /* suffix_extractor.intentdefinition in Sources */,
+				BCB7CA5C263549B300492C11 /* SuffixesViewerUi.swift in Sources */,
+				BCB7CA54263547D200492C11 /* SuffixesViewer.swift in Sources */,
+				BCB7CA3926353E4800492C11 /* SourceTextTerminalUi.swift in Sources */,
+				BCB7CA582635480E00492C11 /* SuffixesViewerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,10 @@ import SwiftUI
 struct homework_13App: App {
     
     var body: some Scene {
-        WindowGroup { MainScreen() }
+        WindowGroup {
+            MainScreen(SourceTextTerminal.ViewModel(),
+                       SuffixesViewer.ViewModel())
+        }
     }
     
 }

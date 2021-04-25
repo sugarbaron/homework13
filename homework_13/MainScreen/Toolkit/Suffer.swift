@@ -5,7 +5,7 @@
 //  Created by sugarbaron on 24.04.2021.
 //
 
-/** short-name variant: SUFFix + handlER = suffer */
+/** SUFFER means SUFFix + decomposER */
 final class Suffer {
     
     static func extract(from source: String) -> [String] {
