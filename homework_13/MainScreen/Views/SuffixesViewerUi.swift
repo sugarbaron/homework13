@@ -30,10 +30,13 @@ extension SuffixesViewer {
                 .foregroundColor(.white)
                 .pickerStyle(SegmentedPickerStyle())
                 .cornerRadius(5)
-                .hideKeyboardOnTap()
                 
-                List { ForEach(model.suffixes) { suffix in
-                    Text(suffix)
+                List { ForEach(model.list) { item in
+                    if model.desiredResultSet == .abc {
+                        Text("\(item.suffix)")
+                    } else {
+                        Text("\(item.suffix) - \(item.number)")
+                    }
                 } }
                 .background(Color.black)
                 .cornerRadius(5)

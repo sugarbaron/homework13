@@ -26,7 +26,6 @@ extension SourceTextTerminal {
                     .foregroundColor(.black)
                     .background(Color(red: 0.85, green: 0.8, blue: 0.65))
                     .cornerRadius(5)
-                    .onTapGesture { model.sourceText = "" }
                 Button("split") {
                     hideKeyboard()
                     model.buttonTapped(model.sourceText)

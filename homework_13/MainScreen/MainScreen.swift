@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-//import UIKit
 
 struct MainScreen : View {
     
@@ -18,8 +17,8 @@ struct MainScreen : View {
         self.terminalModel = terminalModel
         self.suffixesViewerModel = suffixesViewerModel
         terminalModel.buttonTapped = { sourceText in
-            suffixesViewerModel.suffixes = Suffer.extract(from: sourceText) }
-        hideKeyboardOnTap()
+            suffixesViewerModel.suffixes = Suffer.extract(from: sourceText)
+        }
     }
     
     var body: some View {
@@ -39,7 +38,6 @@ struct MainScreen : View {
         }
         .padding(10)
         .background(Color(red: 0.25, green: 0.25, blue: 0.25))
-        .hideKeyboardOnTap()
     }
     
 }

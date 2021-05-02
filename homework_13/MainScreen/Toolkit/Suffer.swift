@@ -28,9 +28,7 @@ final class Suffer {
 
 extension String {
     
-    func index(from: Int) -> Index {
-        
-        index(startIndex, offsetBy: from) }
+    func index(from: Int) -> Index { index(startIndex, offsetBy: from) }
     
     func substring(_ r: Range<Int>) -> String {
         let startIndex = index(from: r.lowerBound)

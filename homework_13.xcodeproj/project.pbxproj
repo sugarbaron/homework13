@@ -21,8 +21,6 @@
 		BCB609B526344F2700BDC918 /* Suffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB609B426344F2700BDC918 /* Suffer.swift */; };
 		BCB7CA3926353E4800492C11 /* SourceTextTerminalUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA3826353E4800492C11 /* SourceTextTerminalUi.swift */; };
 		BCB7CA4326353F7700492C11 /* SourceTextTerminalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA4226353F7700492C11 /* SourceTextTerminalViewModel.swift */; };
-		BCB7CA4C2635411B00492C11 /* SourceTextTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA4B2635411B00492C11 /* SourceTextTerminal.swift */; };
-		BCB7CA54263547D200492C11 /* SuffixesViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA53263547D200492C11 /* SuffixesViewer.swift */; };
 		BCB7CA582635480E00492C11 /* SuffixesViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA572635480E00492C11 /* SuffixesViewerViewModel.swift */; };
 		BCB7CA5C263549B300492C11 /* SuffixesViewerUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA5B263549B300492C11 /* SuffixesViewerUi.swift */; };
 		BCB7CA6026354CC300492C11 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA5F26354CC300492C11 /* Keyboard.swift */; };
@@ -69,8 +67,6 @@
 		BCB609B426344F2700BDC918 /* Suffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suffer.swift; sourceTree = "<group>"; };
 		BCB7CA3826353E4800492C11 /* SourceTextTerminalUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTextTerminalUi.swift; sourceTree = "<group>"; };
 		BCB7CA4226353F7700492C11 /* SourceTextTerminalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTextTerminalViewModel.swift; sourceTree = "<group>"; };
-		BCB7CA4B2635411B00492C11 /* SourceTextTerminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTextTerminal.swift; sourceTree = "<group>"; };
-		BCB7CA53263547D200492C11 /* SuffixesViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesViewer.swift; sourceTree = "<group>"; };
 		BCB7CA572635480E00492C11 /* SuffixesViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesViewerViewModel.swift; sourceTree = "<group>"; };
 		BCB7CA5B263549B300492C11 /* SuffixesViewerUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesViewerUi.swift; sourceTree = "<group>"; };
 		BCB7CA5F26354CC300492C11 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
@@ -159,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				BC6CF63F262B0692003FC457 /* MainScreen.swift */,
-				BCB7CA4A2635410700492C11 /* UiComponents */,
 				BCB7CA3D26353E5C00492C11 /* Views */,
 				BCB7CA3E26353E6B00492C11 /* ViewModels */,
 				BCB7CA3F26353E7B00492C11 /* Toolkit */,
@@ -192,15 +187,6 @@
 				BCB7CA5F26354CC300492C11 /* Keyboard.swift */,
 			);
 			path = Toolkit;
-			sourceTree = "<group>";
-		};
-		BCB7CA4A2635410700492C11 /* UiComponents */ = {
-			isa = PBXGroup;
-			children = (
-				BCB7CA4B2635411B00492C11 /* SourceTextTerminal.swift */,
-				BCB7CA53263547D200492C11 /* SuffixesViewer.swift */,
-			);
-			path = UiComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,13 +291,11 @@
 			files = (
 				BCB7CA4326353F7700492C11 /* SourceTextTerminalViewModel.swift in Sources */,
 				BC6CF640262B0692003FC457 /* MainScreen.swift in Sources */,
-				BCB7CA4C2635411B00492C11 /* SourceTextTerminal.swift in Sources */,
 				BCB7CA6026354CC300492C11 /* Keyboard.swift in Sources */,
 				BC6CF63E262B0691003FC457 /* homework_13App.swift in Sources */,
 				BCB609B526344F2700BDC918 /* Suffer.swift in Sources */,
 				BC6CF65F262B084C003FC457 /* suffix_extractor.intentdefinition in Sources */,
 				BCB7CA5C263549B300492C11 /* SuffixesViewerUi.swift in Sources */,
-				BCB7CA54263547D200492C11 /* SuffixesViewer.swift in Sources */,
 				BCB7CA3926353E4800492C11 /* SourceTextTerminalUi.swift in Sources */,
 				BCB7CA582635480E00492C11 /* SuffixesViewerViewModel.swift in Sources */,
 			);

@@ -7,11 +7,14 @@
 
 import SwiftUI
 
+/* namespace class */
+final class SourceTextTerminal { }
+
 extension SourceTextTerminal {
     
     final class ViewModel : ObservableObject {
         
-        @Published var sourceText: String = "1"
+        @Published var sourceText: String = "aaaaa bbbbb cccc ddd"
         var buttonTapped: (String) -> Void = { _ in }
         
     }
