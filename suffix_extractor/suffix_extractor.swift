@@ -25,8 +25,8 @@ struct Provider: IntentTimelineProvider {
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
+        for secondOffset in 0 ..< 5 {
+            let entryDate = Calendar.current.date(byAdding: .second, value: secondOffset, to: currentDate)!
             let entry = SimpleEntry(date: entryDate, configuration: configuration)
             entries.append(entry)
         }
@@ -43,15 +43,39 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct suffix_extractorEntryView : View {
+    
     var entry: Provider.Entry
     
-    @State var dbg: String = "your ads can be here"
-
+    init(entry: Provider.Entry) {
+        self.entry = entry
+    }
+    
     var body: some View {
         VStack {
-            TextEditor(text: $dbg)
-            Text(entry.date, style: .time)
+            Spacer()
+            HStack {
+                Spacer().frame(width: 1)
+                Text("\(SharedStorage.sourceText)")
+                    .frame(width: 300, height: 70)
+                    .foregroundColor(.black)
+                    .background(Color(red: 0.85, green: 0.8, blue: 0.65))
+                    .cornerRadius(5)
+                    .padding(10)
+                Spacer().frame(width: 1)
+            }
+            Spacer()
+            if let url = SharedStorage.splitRequest {
+                Link(destination: url, label: {
+                        Text("split")
+                            .frame(width: 70, height: 70)
+                            .background(Color.yellow)
+                            .foregroundColor(.black)
+                            .cornerRadius(5)
+                })
+            }
+            Spacer()
         }
+        
     }
 }
 
@@ -62,9 +86,12 @@ struct suffix_extractor: Widget {
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             suffix_extractorEntryView(entry: entry)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color(red: 0.25, green: 0.25, blue: 0.25))
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.systemLarge])
     }
 }
 

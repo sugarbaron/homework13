@@ -24,6 +24,8 @@
 		BCB7CA582635480E00492C11 /* SuffixesViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA572635480E00492C11 /* SuffixesViewerViewModel.swift */; };
 		BCB7CA5C263549B300492C11 /* SuffixesViewerUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA5B263549B300492C11 /* SuffixesViewerUi.swift */; };
 		BCB7CA6026354CC300492C11 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7CA5F26354CC300492C11 /* Keyboard.swift */; };
+		BCC4FA582647AF0400F1642B /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FA572647AF0400F1642B /* SharedStorage.swift */; };
+		BCC4FA5B2647AF0800F1642B /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FA572647AF0400F1642B /* SharedStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,9 @@
 		BCB7CA572635480E00492C11 /* SuffixesViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesViewerViewModel.swift; sourceTree = "<group>"; };
 		BCB7CA5B263549B300492C11 /* SuffixesViewerUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesViewerUi.swift; sourceTree = "<group>"; };
 		BCB7CA5F26354CC300492C11 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		BCC4FA572647AF0400F1642B /* SharedStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStorage.swift; sourceTree = "<group>"; };
+		BCF31D912647D2DA0045E914 /* suffix_extractorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = suffix_extractorExtension.entitlements; sourceTree = "<group>"; };
+		BCF31D962647D4D30045E914 /* homework_13.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = homework_13.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,7 @@
 		BC6CF631262B0691003FC457 = {
 			isa = PBXGroup;
 			children = (
+				BCF31D912647D2DA0045E914 /* suffix_extractorExtension.entitlements */,
 				BC6CF63C262B0691003FC457 /* homework_13 */,
 				BC6CF657262B084B003FC457 /* suffix_extractor */,
 				BC6CF652262B084B003FC457 /* Frameworks */,
@@ -114,6 +120,7 @@
 		BC6CF63C262B0691003FC457 /* homework_13 */ = {
 			isa = PBXGroup;
 			children = (
+				BCF31D962647D4D30045E914 /* homework_13.entitlements */,
 				BC6CF63D262B0691003FC457 /* homework_13App.swift */,
 				BCB7CA3C26353E5200492C11 /* MainScreen */,
 				BC6CF641262B0692003FC457 /* Assets.xcassets */,
@@ -185,6 +192,7 @@
 			children = (
 				BCB609B426344F2700BDC918 /* Suffer.swift */,
 				BCB7CA5F26354CC300492C11 /* Keyboard.swift */,
+				BCC4FA572647AF0400F1642B /* SharedStorage.swift */,
 			);
 			path = Toolkit;
 			sourceTree = "<group>";
@@ -293,6 +301,7 @@
 				BC6CF640262B0692003FC457 /* MainScreen.swift in Sources */,
 				BCB7CA6026354CC300492C11 /* Keyboard.swift in Sources */,
 				BC6CF63E262B0691003FC457 /* homework_13App.swift in Sources */,
+				BCC4FA582647AF0400F1642B /* SharedStorage.swift in Sources */,
 				BCB609B526344F2700BDC918 /* Suffer.swift in Sources */,
 				BC6CF65F262B084C003FC457 /* suffix_extractor.intentdefinition in Sources */,
 				BCB7CA5C263549B300492C11 /* SuffixesViewerUi.swift in Sources */,
@@ -306,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC6CF65E262B084C003FC457 /* suffix_extractor.intentdefinition in Sources */,
+				BCC4FA5B2647AF0800F1642B /* SharedStorage.swift in Sources */,
 				BC6CF659262B084B003FC457 /* suffix_extractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +453,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = homework_13/homework_13.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"homework_13/Preview Content\"";
 				DEVELOPMENT_TEAM = 6427J754M8;
@@ -466,6 +477,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = homework_13/homework_13.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"homework_13/Preview Content\"";
 				DEVELOPMENT_TEAM = 6427J754M8;
@@ -488,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = suffix_extractorExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6427J754M8;
 				INFOPLIST_FILE = suffix_extractor/Info.plist;
@@ -510,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = suffix_extractorExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6427J754M8;
 				INFOPLIST_FILE = suffix_extractor/Info.plist;

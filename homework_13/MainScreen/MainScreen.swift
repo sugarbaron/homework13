@@ -10,6 +10,7 @@ import SwiftUI
 struct MainScreen : View {
     
     private var terminalModel: SourceTextTerminal.ViewModel
+    
     private var suffixesViewerModel: SuffixesViewer.ViewModel
     
     init(_ terminalModel: SourceTextTerminal.ViewModel,
@@ -38,6 +39,9 @@ struct MainScreen : View {
         }
         .padding(10)
         .background(Color(red: 0.25, green: 0.25, blue: 0.25))
+        .onOpenURL(perform: { url in if (url == SharedStorage.splitRequest) {
+            suffixesViewerModel.suffixes = Suffer.extract(from: terminalModel.sourceText)
+        } })
     }
     
 }

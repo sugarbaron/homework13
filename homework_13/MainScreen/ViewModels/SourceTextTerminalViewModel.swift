@@ -14,8 +14,11 @@ extension SourceTextTerminal {
     
     final class ViewModel : ObservableObject {
         
-        @Published var sourceText: String = "aaaaa bbbbb cccc ddd"
+        @Published var sourceText: String = "aaaaa bbbbb cccc ddd" { didSet { SharedStorage.sourceText = sourceText } }
+        
         var buttonTapped: (String) -> Void = { _ in }
+        
+        init() { SharedStorage.sourceText = sourceText }
         
     }
     
